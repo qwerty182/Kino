@@ -16,6 +16,7 @@ class RegistrationActivity : AppCompatActivity() {
 
         btnRegistration.setOnClickListener {
             registration()
+            Log.i("MyLog", "Нажал")
         }
         btnBack.setOnClickListener {
             val intent = Intent(this@RegistrationActivity, MainActivity::class.java)
@@ -43,7 +44,7 @@ class RegistrationActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "Пользователь добавлен", Toast.LENGTH_LONG).show()
                 val intent = Intent(this@RegistrationActivity, MainActivity::class.java)
                 startActivity(intent)
-                Log.i("MyLog", "registration: ")
+                Log.i("MyLog", it.Body?.IdEmployee.toString())
             }
         }
     }

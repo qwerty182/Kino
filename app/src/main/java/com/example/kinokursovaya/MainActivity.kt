@@ -33,9 +33,11 @@ class MainActivity : AppCompatActivity() {
         )
 
         apiService.userAuthorization(modelClass) {
-            Toast.makeText(applicationContext, "Вход...", Toast.LENGTH_LONG).show()
-            val intent = Intent(this@MainActivity, MainMenuActivity::class.java)
-            startActivity(intent)
+            if ( it != null) {
+                Toast.makeText(applicationContext, "Вход...", Toast.LENGTH_LONG).show()
+                val intent = Intent(this@MainActivity, MainMenuActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 }
