@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingTicketActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:text="Заказ билета"
+                android:textColor="#19BECD"/>
+
+            <ImageView
+                android:id="@+id/imageFilm"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:contentDescription="noPhoto"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                app:srcCompat="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/textTitleDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Дата сеанса:"
+                android:textColor="#19BECD"
+                android:textSize="28dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerDate"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textTitleTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Время сеанса:"
+                android:textColor="#19BECD"
+                android:textSize="28dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerTime"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textTitleRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Ряд:"
+                android:textColor="#19BECD"
+                android:textSize="28dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerRow"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textTitlePlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Место:"
+                android:textColor="#19BECD"
+                android:textSize="28dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerPlace"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Купить билет"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

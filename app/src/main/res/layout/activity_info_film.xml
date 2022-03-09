@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoFilmActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textFilmName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#19BECD"
+                android:textSize="28dp"
+                android:text="Название"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/imageFilm"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textTitleGeneralInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#19BECD"
+                android:textSize="28dp"
+                android:text="Общая информация:"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textGeneralInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#19BECD"
+                android:textSize="16dp"
+                android:text="текст"
+                android:textAlignment="center"
+                android:justificationMode="inter_word"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/textTitleAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#19BECD"
+                android:textSize="28dp"
+                android:text="Возрастное ограничение:"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#19BECD"
+                android:textSize="16dp"
+                android:text="текст"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textTitleDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#19BECD"
+                android:textSize="28dp"
+                android:text="Длительность фильма:"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#19BECD"
+                android:textSize="16dp"
+                android:text="текст"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textTitleGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#19BECD"
+                android:textSize="28dp"
+                android:text="Жанры:"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#19BECD"
+                android:textSize="16dp"
+                android:text="текст"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnBookTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Заказать билет"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
